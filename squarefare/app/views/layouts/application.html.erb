@@ -24,6 +24,20 @@
       
   	<%= render 'layouts/header' %>
 
+    <!-- Flash messages for login -->
+    <div class="container login-message">
+    <% flash.each do |key, value| %>
+      <div class="deep-orange accent-2 alert alert-<%= key %>">
+        <a href="#" data-dismiss="alert" class="close">×</a>
+        <ul>
+          <li>
+            <%= value %>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <% end %>
+
     <%= yield %>
 
     <!-- %= render 'layouts/footer' % -->
