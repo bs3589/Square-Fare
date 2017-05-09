@@ -1,10 +1,12 @@
 <!-- Navbar -->
  <nav>
     <div class="nav-wrapper deep-orange accent-4">
-      <a href="#" class="brand-logo left">Logo</a>
+      <h4 href="#" class="brand-logo left"> 
+      <%= link_to "Logo", root_path %>
+      </h4>
       <ul id="nav-mobile" class="right">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li> 
+        <li> <%= link_to "About", about_path %> </li>
+        <li> <%= link_to "Contact", contact_path %> </li> 
       </ul>
     </div>
   </nav>
