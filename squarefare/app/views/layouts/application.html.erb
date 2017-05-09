@@ -16,6 +16,7 @@
     <!-- Custom -->
     <link rel="stylesheet" type="text/css" href="/assets/application.css">
     <link rel="stylesheet" type="text/css" href="/assets/sign_in.css">
+    <link rel="stylesheet" type="text/css" href="/assets/business.css">
 
   </head>
 
@@ -25,7 +26,7 @@
   	<%= render 'layouts/header' %>
 
     <!-- Flash messages for login -->
-    <div class="container login-message">
+    <div class="login-message">
     <% flash.each do |key, value| %>
       <div class="deep-orange accent-2 alert alert-<%= key %>">
         <a href="#" data-dismiss="alert" class="close">×</a>

@@ -1,0 +1,41 @@
+<h3>New Business Page</h3>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <div class="box-container">
+        <div class="new_business">
+          <h2 class="page-title">New Business</h2>
+
+			<%= form_for @business do |f| %>
+				<%= f.label :name %>
+				<%= f.text_field :name %>
+				<%= f.label :description %>
+				<%= f.text_area :description %>
+				<%= f.label :address %>
+				<%= f.text_field :address %>
+				<%= f.label :phone %>
+				<%= f.text_field :phone %>
+				<%= f.label :email %>
+				<%= f.text_field :email %>
+				<%= f.label :website_url %>
+				<%= f.text_field :website_url %>
+				<%= f.label :img_url %>
+				<%= f.text_field :img_url %>
+				<%= f.label :menu_url %>
+				<%= f.text_field :menu_url %>
+				<%= f.label :logo_url %>
+				<%= f.text_field :logo_url %>
+				<%= f.submit %>
+
+			<% end %>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+	
