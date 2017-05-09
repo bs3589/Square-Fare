@@ -16,19 +16,12 @@
 
   <body>
 
-<!-- Navbar -->
-  <nav>
-    <div class="nav-wrapper  green">
-      <a href="#" class="brand-logo left">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
-    </div>
-  </nav>
+
+  	<%= render 'layouts/header' %>
 
     <%= yield %>
+
+    <!-- %= render 'layouts/footer' % -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
