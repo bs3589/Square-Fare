@@ -16,13 +16,10 @@
               <p> <%= @business.description %> </p>
             </div>
             <div class="card-action">
-              <a href=" <%= @business.menu_url %> ">Menu</a>
-              <a href=" <%= @business.website_url %> ">Website</a>
+                           
+              <!-- Modal - to be put into partial -->
 
-
-              <!-- Modal -->
-
-<div class="container">
+<!-- <div class="container"> -->
 
   <!-- Trigger the modal with a button -->
   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Menu</button>
@@ -55,8 +52,10 @@
     </div>
   </div>
   
-</div>
+<!-- </div> -->
 <!-- * -->
+
+<a class="btn btn-info btn-lg" href=" <%= @business.website_url %> ">Website</a>
 
             </div>
             <div class="card-action">
