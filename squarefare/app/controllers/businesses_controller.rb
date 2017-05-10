@@ -22,10 +22,10 @@ class BusinessesController < ApplicationController
 
 	private
 		def business_params
-			params.require(:business).permit(:name)
+			params.require(:business).permit(:name, :description, :address, :phone, :email, 
+											 :website_url, :img_url, :menu_url, :logo_url)
 
-			# params.require(:business).permit(:name, :description, :address, :phone, :email, 
-			# 								 :website_url, :img_url, :menu_url, :logo_url)
+
 
 
 		end

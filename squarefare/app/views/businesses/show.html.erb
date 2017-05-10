@@ -1,3 +1,68 @@
 <h1>Business Show Page</h1>
 
-<h2> <%= @business.name %> </h2>
+<div class="row">
+
+   
+      <div class="container page-contain">
+      
+         
+       <div class="col  m7">
+          <div class="card">
+            <div class="card-image">
+              <img src=" <%= @business.img_url %> ">
+              <span class="card-title"> <%= @business.name %> </span>
+            </div>
+            <div class="card-content">
+              <p> <%= @business.description %> </p>
+            </div>
+            <div class="card-action">
+              <a href=" <%= @business.menu_url %> ">Menu</a>
+              <a href=" <%= @business.website_url %> ">Website</a>
+            </div>
+            <div class="card-action">
+            <ul>
+            	<li> <%= @business.address %> </li>
+            	<br>
+            	<li> <%= @business.phone %> </li>
+            	
+            </ul>
+            </div>
+          </div>
+        </div>
+     
+      
+      
+
+        <div class="col m5">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title"><%= @business.name %> </span>
+              <p> <%= @business.description %> </p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+          
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        
+        </div>
+</div>
+
+      </div>
+
+<!-- card 2 -->
+
+         
+
