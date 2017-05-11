@@ -16,7 +16,7 @@
 				
 				<%= f.label :category %>
 				<%= f.select :category_id, Category.all.map{ |f| [f.name, f.id] }, { }, style: "display: inline ;" %>
-				
+				 
 				<%= f.label :address %>
 				<%= f.text_field :address %>
 				<%= f.label :phone %>
@@ -31,6 +31,11 @@
 				<%= f.text_field :menu_url %>
 				<%= f.label :logo_url %>
 				<%= f.text_field :logo_url %>
+				<%= f.label :latitude %>
+				<%= f.text_field :latitude %>
+				<%= f.label :longitude %>
+				<%= f.text_field :longitude %>
+
 				<%= f.submit class: "btn btn-large indigo accent-1"%>
 
 			<% end %>
