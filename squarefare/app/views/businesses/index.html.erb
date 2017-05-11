@@ -1,4 +1,6 @@
 <br>
 Welcome to SquareFare
 <br><br>
-<%= link_to "Add a Business", new_business_path, class: "btn btn-large indigo accent-1" %>
+<% if user_signed_in? && current_user.admin? %>
+	<%= link_to "Add a Business", new_business_path, class: "btn btn-large indigo accent-1" %>
+<% end %>
