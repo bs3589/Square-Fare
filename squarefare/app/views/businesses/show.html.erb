@@ -147,12 +147,16 @@
           <div class="card">  
           <div class="post-header">
               <h5><%= post.title %></h5>
+              <p> <%= "#{post.user.email}" %>
               
-              <p>Rating: <%= post.rating %>/5</p>
+                
             </div>     
             <hr class="post-divider">             
               <!-- <span class="card-title">Card Title</span>             -->
+
             <div class="card-content">
+              <p class="star-rating">Rating: <%= post.rating %>/5</p>
+              <br>
               <p> <%= post.content %> </p>
             </div>
             
