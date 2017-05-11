@@ -1,0 +1,6 @@
+<%= form_for [@business, @post] do |f| %>
+	<%= f.text_field :title %>
+	<%= f.text_area :content %>
+	<%= f.number_field :rating %>
+	<%= f.submit %>
+	<% end %> 
