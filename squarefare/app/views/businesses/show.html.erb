@@ -15,6 +15,10 @@
               <span class="card-title"> <%= @business.name %> </span>
             </div>
             <div class="card-content business-description">
+
+              <!-- Raty star rating -->
+              <!-- <span class="star-rating" data-score=<%= @avg_rating %> ></span> -->
+
               <p> <%= @business.description %> </p>
             </div>
             <div class="card-action">
@@ -79,10 +83,9 @@
             <div class="card-content white-text">
               <span class="card-title"><%= @business.name %> </span>
 
-              <!-- Raty star rating -->
-              <span class="star-rating" data-score=<%= @avg_rating %> ></span>
+              <a class="twitter-timeline" data-width="300" data-height="300" href="https://twitter.com/brickstorepub">Tweets by TwitterDev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-              <p> <%= @business.description %> </p>
+              
             </div>
             <div class="card-action">
               <a href="#">This is a link</a>
@@ -191,21 +194,6 @@
 </div>
 </div>
 
-<!-- <h3>My Google Maps Demo</h3>
-          <div id="map" style="height: 400px; width: 100%;"></div>
-          <script>
-            function initMap() {
-              var uluru = {lat: 33.753746, lng: -84.386330};
-              var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 4,
-                center: uluru
-              });
-              var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-              });
-            }
-          </script>
-          <script async defer
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-9So3_0iQnabOvsyYEn1CSBQliSG78xc&callback=initMap">
-          </script> -->
+Twitter API test
+
+<!-- <a class="twitter-timeline" href="https://twitter.com/TwitterDev">Tweets by TwitterDev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
