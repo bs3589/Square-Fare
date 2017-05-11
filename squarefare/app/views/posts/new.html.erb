@@ -1,6 +1,26 @@
-<%= form_for [@business, @post] do |f| %>
-	<%= f.text_field :title %>
-	<%= f.text_area :content %>
-	<%= f.number_field :rating %>
-	<%= f.submit %>
-	<% end %> 
+
+<h3>New Post Page</h3>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <div class="box-container">
+        <div class="new_business">
+          <h2 class="page-title">New Post</h2>
+
+			<%= form_for [@business, @post] do |f| %>
+				<%= f.label :title %>
+				<%= f.text_field :title %>
+				<%= f.label :content %>
+				<%= f.text_area :content %>
+				<%= f.label :rating %>
+				<%= f.number_field :rating, value: 1, min: 1, max: 5 %>
+				<%= f.submit class: "btn btn-large indigo accent-1"%>
+			<% end %> 
+
+	     </div>
+      </div>
+    </div>
+  </div>
+</div>

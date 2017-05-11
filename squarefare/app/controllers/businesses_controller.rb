@@ -23,6 +23,11 @@ class BusinessesController < ApplicationController
 	def show
 		@business = Business.find(params[:id])
 		@posts = Post.where(business_id: @business)
+		if @posts.blank?
+			@avg_rating = 0
+		else
+			@avg_rating = @posts.average(:rating).round(2)
+		end
 	end
 
 
