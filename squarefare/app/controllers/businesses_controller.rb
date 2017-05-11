@@ -30,11 +30,16 @@ class BusinessesController < ApplicationController
 		end
 	end
 
+	def search
+		@businesses = Business.search(params)
+		
+	end
+
 
 	private
 		def business_params
 			params.require(:business).permit(:name, :description, :address, :category_id, :phone, :email, 
-											 :website_url, :img_url, :menu_url, :logo_url, :latitude, :longitude)
+											 :website_url, :img_url, :menu_url, :logo_url, :latitude, :longitude, :twitter_url)
 
 
 

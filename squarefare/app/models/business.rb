@@ -11,5 +11,11 @@ class Business < ActiveRecord::Base
 		[address]
 	end
 
+	def self.search(params)
+		businesses = Business.where(category_id: params[:category].to_i)
+		businesses = businesses.where("name like ? or description like ?", "%#{params[:search]}%", "%#{params[:search]}%") if params[:search].present?
+		businesses = businesses.near(params[:location], 2) if params[:location].present?
+		businesses
+	end
 
 end

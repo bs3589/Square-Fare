@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   	devise_for :users
   	resources :businesses do
   		resources :posts, except: [:index, :show]
+  		
+  		collection do
+  			get 'search'
+  		end
   	end
   	
 	root 'businesses#index'
