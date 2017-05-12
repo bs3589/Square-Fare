@@ -18,3 +18,28 @@
 	height: 65px;
 
 }
+
+.second-nav {
+	margin-right: 10px;
+}
+
+.search-nav {
+	vertical-align: top;
+}
+
+.search-btn {
+	margin-top: 7px;
+	margin-left: 15px !important;
+}
+
+.cat-search {
+	margin-top: 4px;
+	margin-left: 15px !important;
+}
+
+.text-search {
+	margin-left: 15px !important;
+}
+
+
+
