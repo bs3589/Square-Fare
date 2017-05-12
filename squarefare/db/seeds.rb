@@ -17,4 +17,5 @@ Category.where(name: "Mexican").first_or_create(name: "Mexican")
 Category.where(name: "American").first_or_create(name: "American")
 Category.where(name: "Steakhouse").first_or_create(name: "Steakhouse")
 
+brickstore = Business.create(name: 'Atlanta', image_url:'http://i.imgur.com/uEyWAwc.png')
 
