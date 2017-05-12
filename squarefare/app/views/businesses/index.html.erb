@@ -8,9 +8,9 @@ Welcome to SquareFare
       <div class="card-content white-text">
 
 		    <%= form_tag search_businesses_path, method: :get do |f| %>
-			<%= text_field_tag :search, nil, placeholder: "search" %>
-			<%= text_field_tag :search, nil, placeholder: "zip" %>
-			<%= select_tag :category, options_for_select(Category.all.map{ |c| [c.name, c.id]}), class: "browser-default blue-grey" %>	
+			<%= text_field_tag :search, nil, placeholder: "search" %>	
+			<!-- text_field_tag :search, nil, placeholder: "zip" -->
+			<%= select_tag :category, options_for_select(Category.all.map{ |c| [c.name, c.id]}),include_blank: "All", class: "browser-default blue-grey" %>	
 			<br>
 			<%= submit_tag "Search", class: "btn indigo accent-1" %>			
         	<% end %>						
@@ -25,9 +25,9 @@ Welcome to SquareFare
 <br><br>
  
 
+
 <% if user_signed_in? && current_user.admin? %>
 	<%= link_to "Add a Business", new_business_path, class: "btn btn-large indigo accent-1" %>
 <% end %>
-
 
 

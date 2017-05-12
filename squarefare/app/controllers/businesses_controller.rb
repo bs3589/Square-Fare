@@ -31,8 +31,10 @@ class BusinessesController < ApplicationController
 	end
 
 	def search
-		@businesses = Business.search(params)
-		
+		category_id = params[:category]
+		query = params[:search]
+
+		@businesses = Business.search(category_id, query)
 	end
 
 
