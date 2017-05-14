@@ -28,7 +28,47 @@
 	text-shadow: 2px 2px 4px #000000;
 }
 
+
+/*Fonts*/
+.primary-font {
+	font-family: 'BioRhyme', serif;
+}
+
+.heading-font {
+	font-family: 'Ubuntu', sans-serif;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+
+}
+
+.content-font {
+
+}
+
+/***/
+
 .add-business-btn {
 	margin-left: 20px;
 	margin-top: 20px
 }
+
+.breadcrumb-nav {
+	height: 50px !important;
+}
+
+.breadcrumb-nav-btn {
+	/*height: 10px !important;*/
+}
+
+.breadcrumb {
+	font-family: 'BioRhyme', serif;
+	font-size: 12px;
+	background-color: #607d8b;
+}
+
+.breadcrumb-nav {
+	background-color: #607d8b;
+}
+
+
+
+

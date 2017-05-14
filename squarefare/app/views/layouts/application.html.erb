@@ -12,7 +12,7 @@
     <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <!-- Fonts -->
-
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme|Ubuntu" rel="stylesheet">
     <!-- Custom -->
     <link rel="stylesheet" type="text/css" href="/assets/application.css">
     <link rel="stylesheet" type="text/css" href="/assets/sign_in.css">
@@ -26,9 +26,9 @@
   	<%= render 'layouts/header' %>
 
     <!-- Flash messages for login -->
-    <div class="login-message">
+    <div>
     <% flash.each do |key, value| %>
-      <div class="deep-orange accent-2 alert alert-<%= key %>">
+      <div class="login-message alert alert-<%= key %>">
         <a href="#" data-dismiss="alert" class="close">×</a>
         <ul>
           <li>

@@ -50,4 +50,14 @@
 
 }
 
+.logo-text {
+	font-family: 'BioRhyme', serif;
+}
 
+.main-nav {
+	font-family: 'BioRhyme', serif;
+}
+
+.login-message {
+	background-color: rgba(144,164,174,0.5);
+}

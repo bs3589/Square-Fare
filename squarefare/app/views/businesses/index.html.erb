@@ -6,17 +6,17 @@
         <div class="new_business">
 
 <img src="http://i.imgur.com/i3tC6qm.png">
-
-</div>
-</div>
-</div>
-</div>
+<p class='center logo-text'>Decatur's Food and Drink Guide</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
 <% if user_signed_in? && current_user.admin? %>
 	<div class="add-business-btn">
-	<%= link_to "Add a Business", new_business_path, class: "btn btn-large indigo accent-1 add-business-btn" %>
+	<%= link_to "Add a Business", new_business_path, class: "waves-effect waves-light btn btn-large indigo accent-1 add-business-btn" %>
 	</div>
 <% end %>
 <br>
