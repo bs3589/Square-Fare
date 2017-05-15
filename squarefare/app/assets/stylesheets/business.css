@@ -51,24 +51,9 @@
 	margin-top: 20px
 }
 
-.breadcrumb-nav {
-	height: 50px !important;
+
+
+.nav-image {
+	height: 40px;
 }
-
-.breadcrumb-nav-btn {
-	/*height: 10px !important;*/
-}
-
-.breadcrumb {
-	font-family: 'BioRhyme', serif;
-	font-size: 12px;
-	background-color: #607d8b;
-}
-
-.breadcrumb-nav {
-	background-color: #607d8b;
-}
-
-
-
 
