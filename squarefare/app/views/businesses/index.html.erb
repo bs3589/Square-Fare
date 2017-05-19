@@ -40,14 +40,14 @@
 <!-- *********** -->
 
       <div class="row outerflex">
-        <div class="col l6 m12 s12">
+        <div class="col l4 m6 s12">
           <div class="card">
             <div class="card-image">
-              <img src=" <%= business.img_url %> ">
+              <img class="" src=" <%= business.img_url %> ">
               <span class="card-title business-name-show"> <%= business.name %> </span>
             </div>
             <div class="card-content">
-              <p> <%= business.description %> </p>
+              <p class="truncation"> <%= business.description %> </p>
             </div>
             <div class="card-action">
               <a> <%= link_to "More Info", business_path(business.id) %> </a>

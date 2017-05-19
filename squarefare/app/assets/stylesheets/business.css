@@ -57,31 +57,13 @@
 	height: 40px;
 }
 
-/*Flexbox test*/
-
-.flex-container {
-	display: flex;
+.truncation {
+  width: 100%;
+  height: 100px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-
-.box {
-	height: 500px;
-	min-width: 200px;
-}
-
-.one {
-	background-color: red;
-}
-
-.two {
-	background-color: green;
-}
-
-.three {
-	background-color: blue;
-}
-
-
-/************/
 
 
 
